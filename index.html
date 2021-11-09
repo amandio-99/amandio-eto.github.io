@@ -40,9 +40,9 @@
 
                 <div class="nav-wrapper">
 
-                    <img src="img/Nav/Anonymous_emblem.svg.png" height="60px" style="padding: 3px; border-radius: 1px solid black  ; " alt="">
+                    <img src="img/Nav/Anonymous_emblem.svg.png" height="60px" style="padding: 3px; border-radius: 1px solid black  ;  margin-left: 20px;" alt="">
                     <a href="#!" class="brand-logo">
-                        <div class="col s12 " style="margi:0, 30px;">
+                        <div class="col s12 " style="margi:0, 60px;">
                             <h5> Anonymous Dev</h5>
                         </div>
 
@@ -565,7 +565,14 @@
 
 
         const parallax = document.querySelectorAll('.parallax');
-        M.Parallax.init(parallax)
+        M.Parallax.init(parallax);
+
+        const scroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll, {
+
+            scrollOffset: 50
+
+        });
     </script>
 
 
